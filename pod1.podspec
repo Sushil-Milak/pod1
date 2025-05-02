@@ -25,10 +25,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'vaevaluator0' => 'Sushil.Milak@va.gov' }
-  s.source           = { :git => 'https://github.com/vaevaluator0/pod1.git', :tag => s.version.to_s }
+  # original
+  # s.source           = { :git => 'https://github.com/vaevaluator0/pod1.git', :tag => s.version.to_s }
+  s.source           = { :path => '/Users/sushil/Desktop/repo/login_module/pods/myPod' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '16.0'
 
   s.source_files = 'pod1/Classes/**/*'
   

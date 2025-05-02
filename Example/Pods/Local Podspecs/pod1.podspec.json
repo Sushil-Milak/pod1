@@ -1,0 +1,22 @@
+{
+  "name": "pod1",
+  "version": "0.1.0",
+  "summary": "A short description of pod1.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vaevaluator0/pod1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vaevaluator0": "Sushil.Milak@va.gov"
+  },
+  "source": {
+    "git": "https://github.com/vaevaluator0/pod1.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "pod1/Classes/**/*"
+}
