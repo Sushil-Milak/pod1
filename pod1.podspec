@@ -22,12 +22,15 @@ TODO: Add long description of the pod here.
                        DESC
 
   ###s.homepage         = 'https://github.com/vaevaluator0/pod1'
+  s.homepage            = 'https://github.com/Sushil-Milak/pod1'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   ###s.author           = { 'vaevaluator0' => 'Sushil.Milak@va.gov' }
+  s.author           = { 'Sushil-Milak' => 'Sushil.Milak@va.gov' }
   # original
   # s.source           = { :git => 'https://github.com/vaevaluator0/pod1.git', :tag => s.version.to_s }
-  s.source           = { :path => '/Users/sushil/Desktop/repo/login_module/pods/myPod' }
+  #s.source           = { :path => '/Users/sushil/Desktop/repo/login_module/pods/myPod' }
+   s.source           = { :git => 'https://github.com/Sushil-Milak/pod1.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.0'
