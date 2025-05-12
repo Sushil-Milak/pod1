@@ -35,9 +35,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '16.0'
   s.swift_versions = ['5.0', '5.1', '5.x'] # You can be explicit or use wildcards
+  s.platforms = {
+          "ios": "16.0"
+      }
   # ...
   #s.source_files = 'pod1/Classes/**/*'
-  s.source_files = 'pod1/Classes/**/*.{h,m,swift}'
+  #s.source_files = 'pod1/Classes/**/*.{h,m,swift}'
+  s.source_files = 'Source/**/*.{h,m,swift}'
   # s.resource_bundles = {
   #   'pod1' => ['pod1/Assets/*.png']
   # }
