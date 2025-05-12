@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import AzureCommunicationCalling
-import AVFoundation
-import UserNotifications
+//import AzureCommunicationCalling
+//import AVFoundation
+//import UserNotifications
 
-import Firebase
-import FirebaseAnalytics
+//import Firebase
+//import FirebaseAnalytics
 
 struct VFMPMainViewR: View {
     let title: String
