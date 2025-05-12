@@ -1,7 +1,7 @@
 # comment if you don't want dynamic framework
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '16.0'
 ### original
 target 'pod1_Example' do
   pod 'pod1', :path => '../'
