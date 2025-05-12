@@ -16,6 +16,7 @@
 		B37883F52C4A43D90CDAC3F5F7004479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		C7DDBE79781E52492F50AA4AA6411312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		CD059A6A2DC517CD00532ED5 /* MyReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD059A692DC517BA00532ED5 /* MyReusableView.swift */; };
+		CDDE2B392DCE9BCB0082B639 /* VFMPMainViewR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDE2B382DCE9BCB0082B639 /* VFMPMainViewR.swift */; };
 		F669FCC53DF9D3076A35BE7457E3E19C /* pod1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5852561F7828656847236709DC648F /* pod1-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		C4EFAF6A5AADF51E430930EC559FB4C8 /* Pods-pod1_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pod1_Example.modulemap"; sourceTree = "<group>"; };
 		CD059A692DC517BA00532ED5 /* MyReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReusableView.swift; sourceTree = "<group>"; };
 		CD139C766390BC4EE7F06AB30C25045C /* pod1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pod1-prefix.pch"; sourceTree = "<group>"; };
+		CDDE2B382DCE9BCB0082B639 /* VFMPMainViewR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFMPMainViewR.swift; sourceTree = "<group>"; };
 		D306953B62780499C30A74F42D2FFC4E /* Pods-pod1_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pod1_Example-umbrella.h"; sourceTree = "<group>"; };
 		D71528AE575AE8E342794D11E978DB79 /* pod1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pod1-umbrella.h"; sourceTree = "<group>"; };
 		DCEA38F0D8466FADB65AA7319BEF7405 /* Pods-pod1_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pod1_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		CD059A5D2DC5102C00532ED5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CDDE2B382DCE9BCB0082B639 /* VFMPMainViewR.swift */,
 				CD059A692DC517BA00532ED5 /* MyReusableView.swift */,
 			);
 			path = Source;
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F669FCC53DF9D3076A35BE7457E3E19C /* pod1-dummy.m in Sources */,
+				CDDE2B392DCE9BCB0082B639 /* VFMPMainViewR.swift in Sources */,
 				CD059A6A2DC517CD00532ED5 /* MyReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

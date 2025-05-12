@@ -21,19 +21,20 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/vaevaluator0/pod1'
+  ###s.homepage         = 'https://github.com/vaevaluator0/pod1'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vaevaluator0' => 'Sushil.Milak@va.gov' }
+  ###s.author           = { 'vaevaluator0' => 'Sushil.Milak@va.gov' }
   # original
   # s.source           = { :git => 'https://github.com/vaevaluator0/pod1.git', :tag => s.version.to_s }
   s.source           = { :path => '/Users/sushil/Desktop/repo/login_module/pods/myPod' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.0'
-
-  s.source_files = 'pod1/Classes/**/*'
-  
+  s.swift_versions = ['5.0', '5.1', '5.x'] # You can be explicit or use wildcards
+  # ...
+  #s.source_files = 'pod1/Classes/**/*'
+  s.source_files = 'pod1/Classes/**/*.{h,m,swift}'
   # s.resource_bundles = {
   #   'pod1' => ['pod1/Assets/*.png']
   # }
@@ -41,4 +42,24 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  # add dependency here
+  s.dependency 'AFNetworking', '~> 2.3'
+  # works pod 'AzureCommunicationUICalling'
+  ##s.dependency 'AzureCommunicationUICalling', '1.12.0-beta.1'
+  
+  #pod for chat
+  #s.dependency 'AzureCommunicationUIChat', '1.0.0-beta.4'
+  
+  #pods for firebase messaging
+  #s.dependency 'FirebaseCore'
+  #s.dependency 'FirebaseMessaging'
+  
+  #Add the pod for Firebase Crashlytics
+  #s.dependency 'Firebase/Crashlytics'
+  
+  # add the Firebase pod for Google Analytics
+  #s.dependency 'Firebase/Analytics'
+  #s.dependency 'FirebaseAnalytics'
+  #s.dependency 'FirebaseAuth'
+  #s.dependency 'FirebaseFirestore'
 end
