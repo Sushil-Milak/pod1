@@ -50,12 +50,12 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   # add dependency here
-  s.dependency 'AFNetworking'
+  #s.dependency 'AFNetworking'
   # works pod 'AzureCommunicationUICalling'
-  ##s.dependency 'AzureCommunicationUICalling', '1.12.0-beta.1'
+  s.dependency 'AzureCommunicationUICalling', '1.12.0-beta.1'
   
   #pod for chat
-  #s.dependency 'AzureCommunicationUIChat', '1.0.0-beta.4'
+  s.dependency 'AzureCommunicationUIChat', '1.0.0-beta.4'
   
   #pods for firebase messaging
   #s.dependency 'FirebaseCore'

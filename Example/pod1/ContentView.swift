@@ -22,6 +22,11 @@ struct ContentView: View {
             pod1.MyReusableView(title: "From My Pod")
                         .padding()
         }
+        VStack {
+            
+            pod1.VFMPMainViewR(title: "Second")
+                        .padding()
+        }
     }
 }
 
