@@ -1,9 +1,22 @@
+# TODO list
+create firebase project or use current ios champva prod. Decide on APPLE bundle id.
+create google.plist file
+Decide where does VIDEO/PUSH notification ios related permissions goes. Create
+
+######
+
 # pod1 folder
 ## see README in the pod1 folder
 
+
+
 #######
 # "Example for pod1" folder. This is where we call/ use the MODEL. APPLICATION.
-# adding SPM firebase (look inside beneproto podfile )
+# adding SPM firebase (look inside beneproto podfile ). Check pod1->target->pod1_example->GENERAL-TAB->FrameWork Section.
+
+
+# CustomFolder. This a place where addition/update/customization of files take place to include NEW model (from pods or from SPM).
+For e.g.; RoomModel need an entry. Route need a call to view for the new model.
 
 
 

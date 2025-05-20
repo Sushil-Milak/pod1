@@ -58,15 +58,21 @@ TODO: Add long description of the pod here.
   s.dependency 'AzureCommunicationUIChat', '1.0.0-beta.4'
   
   #pods for firebase messaging
-  #s.dependency 'FirebaseCore'
-  #s.dependency 'FirebaseMessaging'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/Messaging'
   
   #Add the pod for Firebase Crashlytics
-  #s.dependency 'Firebase/Crashlytics'
+  s.dependency 'Firebase/Crashlytics'
   
   # add the Firebase pod for Google Analytics
-  #s.dependency 'Firebase/Analytics'
+  s.dependency 'Firebase/Analytics'
   #s.dependency 'FirebaseAnalytics'
   #s.dependency 'FirebaseAuth'
   #s.dependency 'FirebaseFirestore'
+  s.static_framework = true
+  s.pod_target_xcconfig = {
+  "OTHER_LDFLAGS" => '$(inherited) -framework "FirebaseCore" -framework "FirebaseMessaging"  -framework "FirebaseCrashlytics"  -framework "FirebaseAnalytics"',
+  "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
+  "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/FirebaseCore/Frameworks" "${PODS_ROOT}/FirebaseMessaging/Frameworks"'
+  }
 end

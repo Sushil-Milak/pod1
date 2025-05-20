@@ -15,7 +15,37 @@ import UserNotifications
 
 public struct VFMPMainViewR: View {
     let title: String
+    @Environment(\.colorScheme) var colorScheme
+    @State private var isFMPSessionLaunchView2Presented = false
+    @State private var VFMPPath = NavigationPath()
+    // is it needed? @EnvironmentObject private var routerManager: NavigationRouter
+   
 
+    @StateObject private var notificationManager = NotificationManager()
+    
+    @State private var token = ""
+    @State private var acsUserId = ""
+    @State private var roomId: String = ""
+    @State private var deviceID:String = ""
+    @State private var encounterRequestSent:Bool = false
+    @State private var isAboutViewFocused: Bool = true
+    @State private var isSampleViewFocused: Bool = false
+    var acsHelper = ACSHelper()
+    @StateObject private var userModel =  UserModel()
+    
+    @State private var isShowingViewForController = false
+    @State var showModal = false
+    /////
+    @State private var cameraPermissionGranted = false
+    @State private var showSettingsAlert = false
+    @State private var microphonePermissionGranted = false
+    @State private var microphoneshowSettingsAlert = false
+    @State private var pushnotificationPermissionGranted = false
+    @State private var pushnotificationshowSettingsAlert = false
+    @State private var isencounterRequestExist: Bool = false
+    @State private var isChatUserTokenExist: Bool = false
+    
+    
     public init(title: String) {
         self.title = title
     }
